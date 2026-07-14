@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Millwork Desk — Products, Dictionary, AWI Standard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-view="library">
+
+<!-- ===== isometric 3D sprites ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="oT" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD08A"/><stop offset="1" stop-color="#FF9E2C"/></linearGradient>
+  <linearGradient id="oL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E0620A"/><stop offset="1" stop-color="#BF4A05"/></linearGradient>
+  <linearGradient id="oR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A83A08"/><stop offset="1" stop-color="#7C2705"/></linearGradient>
+  <linearGradient id="gT" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B9E86B"/><stop offset="1" stop-color="#6FC93A"/></linearGradient>
+  <linearGradient id="gL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12A150"/><stop offset="1" stop-color="#0B7C3C"/></linearGradient>
+  <linearGradient id="gR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A6B34"/><stop offset="1" stop-color="#064F26"/></linearGradient>
+  <linearGradient id="rT" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF9573"/><stop offset="1" stop-color="#F0562C"/></linearGradient>
+  <linearGradient id="rL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D22F0F"/><stop offset="1" stop-color="#A82209"/></linearGradient>
+  <linearGradient id="pT" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFDF6"/><stop offset="1" stop-color="#F5E7C8"/></linearGradient>
+
+  <!-- PRODUCTS: stacked cabinet boxes -->
+  <symbol id="i-lib" viewBox="0 0 120 120">
+    <ellipse cx="60" cy="106" rx="44" ry="10" fill="#1A1005" opacity=".18"/>
+    <path d="M60 56 L104 81 L60 106 L16 81 Z" fill="url(#oT)"/>
+    <path d="M16 81 L16 62 L60 87 L60 106 Z" fill="url(#oL)"/>
+    <path d="M104 81 L104 62 L60 87 L60 106 Z" fill="url(#oR)"/>
+    <path d="M22 70 L57 90 L57 95 L22 75 Z" fill="#1A1005" opacity=".22"/>
+    <path d="M98 70 L63 90 L63 95 L98 75 Z" fill="#1A1005" opacity=".3"/>
+    <path d="M60 18 L97 39 L60 60 L23 39 Z" fill="url(#gT)"/>
+    <path d="M23 39 L23 59 L60 80 L60 60 Z" fill="url(#gL)"/>
+    <path d="M97 39 L97 59 L60 80 L60 60 Z" fill="url(#gR)"/>
+    <path d="M60 60 L60 80" stroke="#053A1C" stroke-width="1.6" opacity=".6"/>
+    <circle cx="45" cy="58" r="3" fill="#FFBE0B"/><circle cx="75" cy="58" r="3" fill="#FFBE0B"/>
+    <path d="M60 56 L104 81 L60 106 L16 81 Z" fill="none" stroke="#1A1005" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M16 81 L16 62 L60 87 L60 106 M104 81 L104 62 L60 87" fill="none" stroke="#1A1005" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M60 18 L97 39 L60 60 L23 39 Z M23 39 L23 59 L60 80 L60 60 M97 39 L97 59 L60 80" fill="none" stroke="#1A1005" stroke-width="2.2" stroke-linejoin="round"/>
+  </symbol>
+
+  <!-- DICTIONARY: open book on a wood slab -->
+  <symbol id="i-dict" viewBox="0 0 120 120">
+    <ellipse cx="60" cy="102" rx="42" ry="10" fill="#1A1005" opacity=".18"/>
+    <path d="M60 62 L106 87 L60 110 L14 87 Z" fill="url(#gT)"/>
+    <path d="M14 87 L14 79 L60 102 L60 110 Z" fill="url(#gL)"/>
+    <path d="M106 87 L106 79 L60 102 L60 110 Z" fill="url(#gR)"/>
+    <path d="M60 34 L102 56 L60 78 L18 56 Z" fill="url(#pT)"/>
+    <path d="M18 56 L18 63 L60 85 L60 78 Z" fill="#E3D2AC"/>
+    <path d="M102 56 L102 63 L60 85 L60 78 Z" fill="#CDB98D"/>
+    <path d="M60 30 L100 52 L60 74 L58 72 Z" fill="#FFFDF6"/>
+    <path d="M60 30 L20 52 L60 74 L62 72 Z" fill="#F3E7CC"/>
+    <path d="M68 48 L88 58 M68 55 L84 63" stroke="#C9B78F" stroke-width="2" stroke-linecap="round"/>
+    <path d="M52 48 L32 58 M52 55 L36 63" stroke="#C9B78F" stroke-width="2" stroke-linecap="round"/>
+    <path d="M60 22 L60 74 L67 70 L67 18 Z" fill="url(#oL)"/>
+    <path d="M60 30 L100 52 L60 74 L20 52 Z" fill="none" stroke="#1A1005" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M60 30 L60 74" stroke="#1A1005" stroke-width="2.2"/>
+    <path d="M60 62 L106 87 L60 110 L14 87 Z M14 87 L14 79 M106 87 L106 79" fill="none" stroke="#1A1005" stroke-width="2.2" stroke-linejoin="round"/>
+  </symbol>
+
+  <!-- STANDARD: stamped slab -->
+  <symbol id="i-std" viewBox="0 0 120 120">
+    <ellipse cx="60" cy="104" rx="42" ry="10" fill="#1A1005" opacity=".18"/>
+    <path d="M60 46 L104 71 L60 96 L16 71 Z" fill="url(#rT)"/>
+    <path d="M16 71 L16 84 L60 109 L60 96 Z" fill="url(#rL)"/>
+    <path d="M104 71 L104 84 L60 109 L60 96 Z" fill="#8E1D07"/>
+    <path d="M34 69 L58 83 M43 64 L67 78 M52 59 L76 73" stroke="#8E1D07" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+    <ellipse cx="60" cy="32" rx="25" ry="14" fill="url(#gT)"/>
+    <path d="M35 32 L35 39 A25 14 0 0 0 85 39 L85 32 Z" fill="url(#gL)"/>
+    <ellipse cx="60" cy="32" rx="25" ry="14" fill="none" stroke="#1A1005" stroke-width="2.2"/>
+    <path d="M35 32 L35 39 A25 14 0 0 0 85 39 L85 32" fill="none" stroke="#1A1005" stroke-width="2.2"/>
+    <path d="M51 31 L57 37 L70 24" stroke="#FFF9F0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M60 46 L104 71 L60 96 L16 71 Z M16 71 L16 84 L60 109 L60 96 M104 71 L104 84 L60 109" fill="none" stroke="#1A1005" stroke-width="2.2" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="m-lib" viewBox="0 0 24 24">
+    <path d="M12 5 L21 10 L12 15 L3 10 Z" fill="currentColor"/>
+    <path d="M3 10 L3 15 L12 20 L12 15 Z" fill="currentColor" opacity=".6"/>
+    <path d="M21 10 L21 15 L12 20 L12 15 Z" fill="currentColor" opacity=".35"/>
+  </symbol>
+  <symbol id="m-dict" viewBox="0 0 24 24">
+    <path d="M12 4 L21 9 L12 14 L3 9 Z" fill="currentColor"/>
+    <path d="M3 9 L3 12 L12 17 L12 14 Z" fill="currentColor" opacity=".6"/>
+    <path d="M21 9 L21 12 L12 17 L12 14 Z" fill="currentColor" opacity=".35"/>
+    <path d="M12 14 L12 21" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <symbol id="m-std" viewBox="0 0 24 24">
+    <path d="M12 3 L20 7.5 L12 12 L4 7.5 Z" fill="currentColor"/>
+    <path d="M4 7.5 L4 11 L12 15.5 L12 12 Z" fill="currentColor" opacity=".6"/>
+    <path d="M20 7.5 L20 11 L12 15.5 L12 12 Z" fill="currentColor" opacity=".35"/>
+    <path d="M8 17.5 L11 20.5 L16.5 15" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-find" viewBox="0 0 24 24">
+    <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.4"/>
+    <path d="M16.5 16.5 L21 21" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+  </symbol>
+</defs></svg>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <a class="brand" href="#" onclick="return false"><svg><use href="#i-lib"/></svg><b>Millwork Desk</b></a>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" data-view="library" aria-selected="true"><svg><use href="#m-lib"/></svg>Products</button>
+    <button class="tab" role="tab" data-view="dictionary" aria-selected="false"><svg><use href="#m-dict"/></svg>Dictionary</button>
+    <button class="tab" role="tab" data-view="standard" aria-selected="false"><svg><use href="#m-std"/></svg>Standard</button>
+  </div>
+</nav>
+
+<!-- ===== PRODUCTS ===== -->
+<section class="view on" id="v-library">
+  <div class="hero"><div class="wrap">
+    <div>
+      <div class="kicker">Product library</div>
+      <h1>Every product<br>AWS covers.</h1>
+      <p>Grouped by the AWS section that governs it. Each card carries the drafting brief and three image searches.</p>
+    </div>
+    <svg class="art" viewBox="0 0 120 120"><g><use href="#i-lib"/></g></svg>
+  </div></div>
+
+  <div class="wrap">
+    <div class="bar">
+      <label class="find"><svg><use href="#i-find"/></svg>
+        <input type="search" id="q1" placeholder="Find a product" aria-label="Find a product"></label>
+      <div class="seg" role="group" aria-label="Search term">
+        <button type="button" data-sfx="millwork" aria-pressed="true">+ millwork</button>
+        <button type="button" data-sfx="shop drawing" aria-pressed="false">+ shop drawing</button>
+      </div>
+      <span class="count" id="c1"></span>
+    </div>
+    <div id="secs"></div>
+    <div class="none" id="e1" hidden>Nothing matches that.</div>
+  </div>
+</section>
+
+<!-- ===== DICTIONARY ===== -->
+<section class="view" id="v-dictionary">
+  <div class="hero"><div class="wrap">
+    <div>
+      <div class="kicker">Dictionary</div>
+      <h1>The whole<br>vocabulary.</h1>
+      <p id="dsub"></p>
+    </div>
+    <svg class="art" viewBox="0 0 120 120"><g><use href="#i-dict"/></g></svg>
+  </div></div>
+
+  <div class="wrap">
+    <div class="bar">
+      <label class="find" id="dfind"><svg><use href="#i-find"/></svg>
+        <input type="search" id="q2" placeholder="Search a term or definition" aria-label="Search terms"></label>
+      <div class="seg" role="group" aria-label="View">
+        <button type="button" data-dv="t" aria-pressed="true">Terms</button>
+        <button type="button" data-dv="a" aria-pressed="false">Abbreviations</button>
+      </div>
+      <span class="count" id="c2"></span>
+    </div>
+
+    <div id="dterms">
+      <div class="az" id="az"></div>
+      <dl class="terms" id="tlist"></dl>
+      <div class="none" id="e2" hidden>No term matches that.</div>
+    </div>
+    <div id="dabbr" hidden style="padding-bottom:4rem">
+      <table class="abbr"><tbody id="ab"></tbody></table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STANDARD ===== -->
+<section class="view" id="v-standard">
+  <div class="hero"><div class="wrap">
+    <div>
+      <div class="kicker">AWS 2nd edition · 2014</div>
+      <h1>The rulebook,<br>section by section.</h1>
+      <p>Twelve sections, plus what each one includes and excludes from your scope.</p>
+    </div>
+    <svg class="art" viewBox="0 0 120 120"><g><use href="#i-std"/></g></svg>
+  </div></div>
+
+  <div class="wrap">
+    <div class="bar">
+      <label class="find"><svg><use href="#i-find"/></svg>
+        <input type="search" id="q3" placeholder="Filter sections" aria-label="Filter sections"></label>
+      <span class="count" id="c3"></span>
+    </div>
+    <div class="std">
+      <aside class="toc" id="toc"></aside>
+      <article class="doc" id="doc"></article>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

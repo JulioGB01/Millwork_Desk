@@ -1,0 +1,23 @@
+# Byte-Order Mark and OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Node (if ever used for local serve)
+node_modules/
+
+# Build outputs (none expected, but just in case)
+dist/
+build/
+
+# Logs
+*.log
+
+# Original monolithic file (kept for reference, not deployed)
+millwork-desk.html
