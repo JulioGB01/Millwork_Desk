@@ -1,102 +1,58 @@
 # Millwork Desk
 
-> **Products · Dictionary · AWI Standard** — A single-page reference tool for architectural woodwork professionals.
+> A lightweight, browser-based reference desk for architectural woodwork professionals.
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?logo=github)](https://juliogb01.github.io/Millwork_Desk/)
+[Open the live site](https://juliogb01.github.io/Millwork_Desk/)
 
----
+Millwork Desk brings product categories, a searchable terminology dictionary, and an AWS-oriented section guide into one responsive, zero-build interface.
 
-## Overview
+## What it includes
 
-**Millwork Desk** is a lightweight, zero-dependency reference app that puts three essential resources at your fingertips:
-
-| Tab | Contents |
-|-----|----------|
-| 📦 **Products** | Every product type covered by the AWI/AWS standard, grouped by section, with drafting briefs and image-search links. |
-| 📖 **Dictionary** | 500 + millwork and drafting terms with definitions, an A–Z filter, and an abbreviations table. |
-| 📋 **Standard** | All 12 sections of the AWS 2nd Edition (2014) summarised with includes/excludes per section. |
-
----
-
-## Live Demo
-
-👉 [https://juliogb01.github.io/Millwork_Desk/](https://juliogb01.github.io/Millwork_Desk/)
-
----
-
-## File Structure
-
-```
-Millwork_Desk/
-├── index.html          # Main HTML shell
-├── style.css           # All styles (design tokens, layout, components, responsive)
-├── script.js           # All data (DATA object) + UI logic
-└── README.md           # This file
-```
-
----
+| Area | Purpose |
+| --- | --- |
+| Products | Browse architectural woodwork product types by section, with concise drafting prompts and image-search links. |
+| Dictionary | Search millwork and drafting terms, filter by letter, and review common abbreviations. |
+| Standard guide | Navigate a section-by-section orientation to the Architectural Woodwork Standards (AWS). |
 
 ## Features
 
-- **Instant search** — filter products, terms, or standard sections in real time.
-- **A–Z letter filter** in the Dictionary view.
-- **Sticky table of contents** for the Standard section.
-- **No build step, no framework** — open `index.html` directly in any browser or deploy to any static host.
-- **Responsive** — works on desktop, tablet and mobile.
-- **Accessibility** — ARIA roles on tabs and buttons, `:focus-visible` outlines, `prefers-reduced-motion` respected.
+- Fast client-side search and filtering.
+- Keyboard-accessible tabs and controls.
+- Responsive layout for desktop, tablet, and mobile.
+- No framework, build step, or server required.
+- Motion preferences and focus states respected.
 
----
-
-## Deployment (GitHub Pages)
-
-This repo is configured for **GitHub Pages** from the `main` branch root.
-
-1. Go to **Settings → Pages**.
-2. Source: **Deploy from a branch** → `main` → `/ (root)`.
-3. Save. The site will be live at `https://juliogb01.github.io/Millwork_Desk/` within a minute.
-
----
-
-## Local Development
-
-No build tools required. Just open the file:
+## Run locally
 
 ```bash
-# Clone
 git clone https://github.com/JulioGB01/Millwork_Desk.git
 cd Millwork_Desk
-
-# Open in browser (any of these work)
-start index.html          # Windows
-open index.html           # macOS
-xdg-open index.html       # Linux
-```
-
-Or serve with any static server to avoid CORS issues with local `file://` paths:
-
-```bash
-# Python 3
 python -m http.server 8080
-
-# Node (npx)
-npx serve .
 ```
 
-Then visit `http://localhost:8080`.
+Open `http://localhost:8080`. Opening `index.html` directly also works for the current project.
 
----
+## Project layout
 
-## Standards Reference
+```text
+.
+├── index.html                  # Application shell
+├── style.css                   # Design system and responsive styles
+├── script.js                   # Content data and UI behavior
+├── .github/workflows/static.yml
+└── README.md
+```
 
-Content is based on the **Architectural Woodwork Standards (AWS), 2nd Edition, 2014** published by:
+## Deployment
 
-- [Architectural Woodwork Institute (AWI)](https://www.awinet.org/)
-- [Architectural Woodwork Manufacturers Association of Canada (AWMAC)](https://www.awmac.com/)
-- [Woodwork Institute (WI)](https://www.woodworkinstitute.com/)
+The included workflow deploys the root of `main` to GitHub Pages. In **Settings → Pages**, select **GitHub Actions** as the deployment source.
 
----
+## Standards and copyright
 
-## License
+This is an independent educational reference, not an official publication of AWI, AWMAC, WI, or any standards body. It does not replace the current licensed Architectural Woodwork Standards, project specifications, or professional judgment.
 
-This project is for educational and professional reference purposes.  
-All AWS/AWI content belongs to their respective copyright holders.
+AWS-related material remains subject to its respective owners’ rights. Verify requirements against the current official source before using this tool for a project, and do not submit copyrighted text or images without permission.
+
+## Contributing
+
+Read [`CONTRIBUTING.md`](CONTRIBUTING.md) before proposing changes.
